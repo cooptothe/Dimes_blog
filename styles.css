@@ -1,0 +1,43 @@
+/* Basic styling for the page */
+body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+}
+
+.header {
+    background-color: #333;
+    color: white;
+    padding: 1em 2em;
+    text-align: center;
+}
+
+.nav-links {
+    display: flex;
+    justify-content: space-around;
+}
+
+nav ul li a {
+    color: white;
+    text-decoration: none;
+}
+
+.event-list, .venue-list {
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+}
+
+.event-item, .venue-item {
+    background-color: #f4f4f9;
+    padding: 1em;
+    border-radius: 5px;
+    margin-bottom: 1em;
+}
+
+.footer {
+    text-align: center;
+    background-color: #333;
+    color: white;
+    padding: 1em 2em;
+}

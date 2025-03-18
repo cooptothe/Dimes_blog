@@ -1,0 +1,150 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>D1ME</title>
+    <style>
+        
+        body {
+            font-family: 'Neue Haas Grotesk Regular', sans-serif;
+            font-weight: 700;
+            background-color: #000000; /* Dark background */
+            margin: 0;
+            padding: 0;
+            color: white;
+            overflow-x: hidden;
+            text-align: center;
+        }
+        
+        .container {
+            display: flex;
+            justify-content: space-around;
+            align-items: center;
+            height: 100vh;
+        }
+        
+        h1, h2 {
+            font-family: 'Georgia', serif;
+            color: #FFD700; /* Gold title */
+            margin-bottom: 20px;
+        }
+        
+        p {
+            font-size: 18px;
+            line-height: 1.5;
+        }
+        
+        .button-container {
+            display: flex;
+            gap: 10px;
+        }
+        
+        .button {
+            background-color: #FFD700; /* Gold button */
+            color: black;
+            padding: 12px 24px;
+            border: none;
+            text-align: center;
+            text-decoration: none;
+            display: inline-block;
+            font-size: 16px;
+            margin-top: 20px;
+            cursor: pointer;
+        }
+        
+        .button:hover {
+            background-color: #DAA520; /* Darker gold on hover */
+        }
+        .container {
+            max-width: 900px;
+            margin: 0 auto;
+            padding: 20px;
+        }
+        .logo {
+            width: 100%;
+            height: 300px; /* Adjust this to your logo dimensions */
+        }
+        .button-enter {
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            background-color: #6FDDFF;
+            color: #3B475A;
+            padding: 10px 20px;
+            border-radius: 5px;
+            font-size: 18px;
+            cursor: pointer;
+        }
+        .button-enter:hover {
+            background-color: #C2D1DE;
+        }
+    </style>
+</head>
+<body>
+
+    <div class="container">
+    
+        <div class="logo">
+            <!-- Replace with your logo image -->
+            <img src="https://i.postimg.cc/2S9KhMrn/D1-ME-Logo-Comp-white.png" alt="DJ D1ME Logo">
+        </div>
+        
+        <div class="button-enter" onclick="window.location.href = 'index.html';">
+            <h2>Enter</h2>
+        </div>
+    
+    </div>
+    
+
+<div class="container">
+    <h1>D1ME</h1>
+    <p>Welcome to [Your Name] - Your Personal DJ in the Heart of New Orleans.</p>
+    
+    
+    <div class="button-container">
+        <a href="#about" class="button">INFO</a>
+        <a href="#portfolio" class="button">SHOWS</a>
+        <a href="#contact" class="button">Contact</a>
+    </div>
+</div>
+
+<div id="about">
+    <h2>About Me</h2>
+    <p>D1ME, is a versatile DJ and visual artist born and raised in New Orleans, LA. Rooted in personal liberation and inspired by her love of travel, her intentional music selections span diverse influences from her upbringing within a cultural mecca. Rapidly gaining prominence in New Orleans' music scene, she later co-founded  the techno trio N*S*F*W alongside Djs, Lady Lavender and Gabriela, with the intent to redefine women's roles in music, fusing photography, design, and music together. Her solo sets amplify the sound of Black and other POC artists that can be underrepresented within electronic music across diasporas; each track selected carries a sense of intention and depth. D1ME's passion and work ethic make her a thriving force in her community, 
+        eager to share her unique perspective globally.</p>
+    
+    <img src="https://via.placeholder.com/500" alt="DJ Image" style="border-radius: 8px; margin-top: 20px;">
+</div>
+
+<div id="portfolio">
+    <h2>SHOWS</h2>
+    <p>Here are some of my favorite sets and collaborations.</p>
+    
+    <div class="project-container">
+        <img src="https://via.placeholder.com/300" alt="Project 1">
+        <h3>Project Title 1</h3>
+        <p>Description of Project 1.</p>
+    </div>
+    
+    <div class="project-container">
+        <img src="https://via.placeholder.com/300" alt="Project 2">
+        <h3>Project Title 2</h3>
+        <p>Description of Project 2.</p>
+    </div>
+</div>
+
+<div id="contact">
+    <h2>Contact Me</h2>
+    <p>If you're interested in booking me for a gig or collaborating, feel free to reach out!</p>
+    
+    <form action="#" method="post">
+        <input type="text" name="name" placeholder="Name" required>
+        <input type="email" name="email" placeholder="Email" required>
+        <textarea name="message" placeholder="Message" required></textarea>
+        <button type="submit">Send</button>
+    </form>
+</div>
+
+</body>
+</html>
