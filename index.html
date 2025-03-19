@@ -3,6 +3,7 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <script src="myscript.js"></script>
     <title>D1ME</title>
     <style>
 
@@ -12,13 +13,12 @@
             background-color: #000000; /* Dark background */
             margin: 0;
             padding: 0;
-            overflow-x: hidden;
             text-align: center;
         }
 
         .logo {
             display: inline-block;
-            margin-top: 20px;
+            margin-top: 10px;
         }
 
         .enter-button {
@@ -27,10 +27,11 @@
             padding: 12px 24px;
             border: none;
             text-align: center;
-            text-decoration: none;
             display: inline-block;
             font-size: 16px;
             cursor: pointer;
+            align-items: center;
+            align-content: center;
         }
 
         .section {
@@ -48,7 +49,7 @@
         <img src="https://i.postimg.cc/2S9KhMrn/D1-ME-Logo-Comp-white.png" alt="DJ D1ME Logo">
     </div>
     
-    <button onclick="goToHomePage()" class="enter-button">Enter</button>
+    <a href="#homepage" class="enter-button">Enter</a>
 
     <div id="homepage" class="section">
         <!-- Add your content for the homepage here -->
@@ -57,28 +58,40 @@
         
         <!-- Navigation links -->
         <nav>
-            <ul>
-                <li><a href="#aboutme-section">About D1ME</a></li>
-                <li><a href="#shows-section">D1ME's Shows</a></li>
-                <li><a href="#contact-section">Contact D1ME</a></li>
-            </ul> |
+            <menu>
+                <ul>
+                    <a href="#aboutme">About D1ME</a>
+                    <a href="#shows-section">D1ME's Shows</a>
+                    <a href="#contact-section">Contact D1ME</a>
+                </ul> |
+            </menu>
+
         </nav>
     </div>
 
-    <div id="aboutme-section" class="section">
+    <div id="aboutme" class="section" hidden="true">
         <h1>About D1ME</h1>
         <!-- Add your content here -->
     </div>
 
-    <div id="shows-section" class="section">
+    <div id="shows-section" class="section" hidden="true">
         <h1>D1ME's Shows</h1>
         <!-- Add your content here -->
     </div>
 
-    <div id="contact-section" class="section">
+    <div id="contact-section" class="section" hidden="true">
         <h1>Contact D1ME</h1>
         <!-- Add your content here -->
     </div>
+
+    function myFunction() {
+        var x = document.getElementById("myDIV");
+        if (x.style.display === "none") {
+          x.style.display = "block";
+        } else {
+          x.style.display = "none";
+        }
+      }
 
 
 </body>
