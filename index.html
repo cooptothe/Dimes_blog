@@ -33,29 +33,11 @@
             cursor: pointer;
         }
 
-        .homepage {
+        .section {
             background-color: #000000; /* Dark background */
             color: white;
             padding: 20px;
             overflow-x: hidden;
-        }
-
-        .navigation-menu {
-            display: flex;
-            gap: 10px;
-            margin-top: 20px;
-        }
-
-        .nav-button {
-            background-color: #FFD700; /* Gold button */
-            color: black;
-            padding: 12px 24px;
-            border: none;
-            text-align: center;
-            text-decoration: none;
-            display: inline-block;
-            font-size: 16px;
-            cursor: pointer;
         }
     </style>
 </head>
@@ -66,13 +48,52 @@
         <img src="https://i.postimg.cc/2S9KhMrn/D1-ME-Logo-Comp-white.png" alt="DJ D1ME Logo">
     </div>
     
-    <button onclick="goToHomepage()" class="enter-button">Enter</button>
+    <button onclick="goToHomePage()" class="enter-button">Enter</button>
 
-    <script>
-        function goToHomepage() {
-            window.location.href = 'homepage.html';
-        }
-    </script>
+    <div id="homepage" class="section">
+        <!-- Add your content for the homepage here -->
+        <h1>Welcome to DJ D1ME's Website</h1>
+        <p>Explore different sections of my work and connect with me.</p>
+        
+        <!-- Navigation links -->
+        <nav>
+            <ul>
+                <li><a href="#aboutme-section">About D1ME</a></li>
+                <li><a href="#shows-section">D1ME's Shows</a></li>
+                <li><a href="#contact-section">Contact D1ME</a></li>
+            </ul> |
+        </nav>
+    </div>
+
+    <div id="aboutme-section" class="section">
+        <h1>About D1ME</h1>
+        <!-- Add your content here -->
+    </div>
+
+    <div id="shows-section" class="section">
+        <h1>D1ME's Shows</h1>
+        <!-- Add your content here -->
+    </div>
+
+    <div id="contact-section" class="section">
+        <h1>Contact D1ME</h1>
+        <!-- Add your content here -->
+    </div>
+
 
 </body>
+<script>
+    function goToHomePage() {
+        document.getElementById('homepage').style.display = 'block';
+        document.getElementById('aboutme-section').style.display = 'none';
+        document.getElementById('shows-section').style.display = 'none';
+        document.getElementById('contact-section').style.display = 'none';
+
+        // Show navigation links
+        const navLinks = document.querySelectorAll('#homepage a');
+        navLinks.forEach(link => {
+            link.style.display = 'block';
+        });
+    }
+</script>
 </html>
