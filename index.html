@@ -1,87 +1,48 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link href="https://fonts.googleapis.com/css2?family=Oswald:wght@400;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="styles.css">
     <title>D1ME</title>
     <style>
-        body {
-            font-family: 'Oswald', sans-serif;
-            font-weight: 700;
-            background-color: #000000;
-            margin: 0;
-            padding: 0;
-            overflow-x: hidden;
-            text-align: center;
-        }
-
         .logo {
-            display: inline-block;
-            margin-top: 20px;
+            position: relative;
+            top: -150px;
         }
 
         .logo img {
-            max-width: 100%;
+            max-width: auto;
             height: auto;
-        }
-
-        .homepage {
-            background-color: #000000;
-            color: white;
-            padding: 20px;
-            overflow-x: hidden;
+            align-self: center;
         }
 
         .enter-button {
             background-color: #FFD700;
             color: black;
-            padding: 12px 24px;
-            border: none;
             text-align: center;
             text-decoration: none;
-            display: inline-block;
             font-size: 16px;
             cursor: pointer;
             transition: background-color 0.3s ease;
-        }
-
-        .enter-button:hover {
-            background-color: #e6c300;
-        }
-
-        .navigation-menu {
-            display: flex;
-            gap: 10px;
-            margin-top: 20px;
-            justify-content: center;
-        }
-
-        .nav-button {
-            background-color: #FFD700;
-            color: black;
             padding: 12px 24px;
-            border: none;
-            text-align: center;
-            text-decoration: none;
-            display: inline-block;
-            font-size: 16px;
-            cursor: pointer;
-            transition: background-color 0.3s ease;
-        }
-
-        .nav-button:hover {
-            background-color: #e6c300;
+            right: 725px;
+            position: absolute;
+            top: 500px;
+            align-self: center;
         }
     </style>
 </head>
+
 <body>
 
     <div class="logo">
         <img src="https://i.postimg.cc/2S9KhMrn/D1-ME-Logo-Comp-white.png" alt="DJ D1ME Logo">
     </div>
-    
-    <button onclick="goToHomepage()" class="enter-button" aria-label="Enter Site">Enter</button>
+
+    <button onclick="goToHomepage()" class="enter-button">ENTER</button>
 
     <script>
         function goToHomepage() {
@@ -90,4 +51,5 @@
     </script>
 
 </body>
+
 </html>
