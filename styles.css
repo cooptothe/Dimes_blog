@@ -1,7 +1,7 @@
 .homepage {
     background-color: #000000;
     color: white;
-    padding: 20px;
+    padding: 50px;
     overflow-x: hidden;
 }
 
@@ -19,7 +19,7 @@ body {
 }
 
 .header {
-    background-color: #333;
+    background-color: #00000000;
     color: white;
     padding: 1em 2em;
     text-align: center;
@@ -28,12 +28,17 @@ body {
 .navigation-menu {
     display: flex;
     justify-content: space-around;
+    padding-bottom: 300px;
+   margin-top: 300px;
+   z-index: 7;
 }
 
 .nav-button {
     color: white;
     text-decoration: none;
     vertical-align: baseline;
+    padding: 50px;
+    z-index: 7;
 }
 
 .event-list, .venue-list {
@@ -157,6 +162,51 @@ button,button::after {
     100% {
       clip-path: var(--move1);
       transform: translate(0);
+    }
+  }
+  
+  /* From Uiverse.io by 20essentials */ 
+.container-loader {
+    position: absolute;
+    z-index: auto;
+    transform-style: preserve-3d;
+    overflow: hidden;
+    transform: translateX(0%);
+    animation: perspective 20s linear infinite both;
+  
+    &,
+    .loader {
+      height: 100%;
+      width: 100%;
+    }
+  
+    .loader {
+      --color: #00f;
+      z-index: auto;
+      position: absolute;
+      background: repeating-linear-gradient(
+          transparent 0 30px,
+          var(--color) 31px 32px
+        ),
+        repeating-linear-gradient(
+          to right,
+          transparent 0 30px,
+          var(--color) 31px 32px
+        );
+      border-left: 1px solid var(--color);
+      border-top: 1px solid var(--color);
+      transform: rotateX(37deg);
+      top: 0;
+    }
+  }
+  
+  @keyframes perspective {
+    0% {
+      perspective: 1px;
+    }
+  
+    100% {
+      perspective: 50px;
     }
   }
   
